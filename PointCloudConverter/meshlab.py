@@ -3,21 +3,34 @@ import argparse
 import os
 from datetime import datetime
 
-#input = path to directory where the pointclouds are located. IMPORTANT: directory organization must be of the form bv.: \Maps\object\Ply\SOORT_0001.ply
-#output =path to directory where the .obj files should come. IMPORTANT: all meshes must be in folders constructed as bv.: \Maps\object\Stl\SOORT_0001.obj
-#object =  which type of pointcloud is desired bv. ['longdress', 'loot', 'redandblack', 'soldier']. If not given, all 4 are taken.
-#depth = If depth is given, the meshes for that depth are constructed. If not they are made for 6,7,8,9 and 10. IMPORTANT the folder where the scripts reside must be modified in the meshing function
-def main(input, output, object, depth):
+#input = path to directory where the pointclouds are located. IMPORTANT: directory organization must be of the form bv.: \PointClouds\8iVFBv2\object\Ply\object_0001.ply
+#output =path to directory where the .obj files should come. IMPORTANT: all meshes must be in folders constructed as bv.: \Meshes\object\Stl\object_0001.obj
+#object = Which type of pointcloud is to be converted. ['longdress', 'loot', 'redandblack', 'soldier']. If not given, all 4 are taken.
+#depth = If depth is given, the meshes for that depth are constructed. If not they are made for 6,7 and 8.
+#start = Starting frame number.
+#end = Ending frame number.
+
+def main(object, depth, start, end):
     now = datetime.now()
     print("Starting Time:", now)
     objects = ['longdress', 'loot', 'redandblack', 'soldier']
-    scripts = 'Scripts'   #place to directory with the scripts from starting place "C:\\Users\\woutm\\unief\\VOP\\scripts --> scripts" for current working directory "C:\\Users\\woutm\\unief\\VOP"
+    scripts = 'Scripts'   #place to directory with the scripts
+
+    if start is None:
+        start = 1
+    if end is None:
+        end = 300 
+
+
+    input = "PointClouds\\8iVFBv2"
+    output = "Meshes"
+
 
     generationDuration1 = now
     if object is None:
         for pointcloud in objects:
             k = '0001'
-            for i in range(1, 301):     #amount of meshes to be generated
+            for i in range(start, end+1):    
                 if depth is None:
                     for depts in range(6, 9):
                         k = k[:-len(str(i))]+str(i)
@@ -37,7 +50,7 @@ def main(input, output, object, depth):
                     generationDuration1 = generationDuration2
     else:
         k = '0001'
-        for i in range(1, 301):     #amount of meshes to be generated
+        for i in range(start, end+1):  
             if depth is None:
                 for depts in range(6, 9):
                     k = k[:-len(str(i))]+str(i)
@@ -84,10 +97,10 @@ if __name__ == '__main__':
             return ', '.join(action.option_strings) + '   ' + args_string
 
     parser = argparse.ArgumentParser(formatter_class=CustomHelpFormatter)
-    parser.add_argument('-i', '--input', type=str, required=True, help="input image (PNG)")
-    parser.add_argument('-o', '--output', type=str, required=True, help="output file (GIF)")
-    parser.add_argument('-s', '--object', type = str, required = False, help = "Which mesh object to create",choices=['longdress', 'loot', 'redandblack', 'soldier'])
-    parser.add_argument('-d', '--depth', type = str, required = False, help = "Depth of screened Poisson for mesh generation", choices=['6', '7', '8', '9', '10'])
+    parser.add_argument('-o', '--object', type = str, required = False, help = "Which mesh object to create",choices=['longdress', 'loot', 'redandblack', 'soldier'])
+    parser.add_argument('-d', '--depth', type = str, required = False, help = "Depth of screened Poisson for mesh generation", choices=['6', '7', '8'])
+    parser.add_argument('-s', '--start', type = int, required = False, help = "Starting frame number",choices=range(1,300))
+    parser.add_argument('-e', '--end', type = int, required = False, help = "Ending frame number", choices=range(1,300))
     args = parser.parse_args()
 
     main(**vars(args))
