@@ -124,27 +124,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &22210822 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1642495067956146628, guid: 992a136ed272f0f44afa98dcf677a38e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1588130096}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &22210829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22210822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35dc3b4122d80ec488ea408d917f1697, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testIndex: 1
-  sceneIndex: 0
-  scenes: []
 --- !u!1 &36700726
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +307,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -507,7 +486,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -583,7 +562,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -636,7 +615,7 @@ GameObject:
   - component: {fileID: 290760008}
   - component: {fileID: 290760007}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SliderB
   m_TagString: Slider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,7 +858,7 @@ GameObject:
   - component: {fileID: 412250085}
   - component: {fileID: 412250084}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SliderA
   m_TagString: Slider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1762,7 +1741,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3338,7 +3317,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3409,11 +3388,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd9d0de87c714f4cadd10723e42637e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TesterName: 
-  TestName: 
+  TesterName: Tester
+  TestName: Test1
   sliders: []
   buttons: []
-  selection: 0
 --- !u!4 &1155751064
 Transform:
   m_ObjectHideFlags: 0
@@ -3943,7 +3921,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4164,7 +4142,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 22210829}
+      objectReference: {fileID: 0}
     - target: {fileID: 1642495067956146631, guid: 992a136ed272f0f44afa98dcf677a38e,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -4531,7 +4509,7 @@ GameObject:
   - component: {fileID: 1638840760}
   - component: {fileID: 1638840759}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SliderC
   m_TagString: Slider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4634,7 +4612,7 @@ GameObject:
   - component: {fileID: 1681047517}
   - component: {fileID: 1681047516}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SliderD
   m_TagString: Slider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4760,7 +4738,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5302,11 +5280,11 @@ GameObject:
   - component: {fileID: 1980565628}
   m_Layer: 0
   m_Name: Questions
-  m_TagString: Untagged
+  m_TagString: Questions
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1980565628
 Transform:
   m_ObjectHideFlags: 0
@@ -5889,7 +5867,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

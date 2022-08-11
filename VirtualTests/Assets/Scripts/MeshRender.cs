@@ -24,6 +24,18 @@ public class MeshRender : MonoBehaviour
 
     public int fps = 50;
 
+
+    void Start()
+    {
+        StartCoroutine(LoadFrames());
+
+        gameObject.transform.localScale = new Vector3(0.0018f, 0.0018f, 0.0018f);
+
+        StartCoroutine(MeshRendering());
+
+    }
+
+    
     void LoadByQuality(int depth, int frames, int i)
     {
         for (int f = i+1 ; f <= frames+i; f++)
@@ -40,22 +52,8 @@ public class MeshRender : MonoBehaviour
     }
 
 
-
-    void Start()
-    {
-        StartCoroutine(LoadFrames());
-
-        gameObject.transform.localScale = new Vector3(0.0018f, 0.0018f, 0.0018f);
-
-        StartCoroutine(MeshRendering());
-
-    }
-
-
     private IEnumerator LoadFrames()
     {
-        // string fileName = "Assets\\Files\\LoadConfiguration\\LoadConfig_" + tag +".cfg";
-        // StreamReader inp = new StreamReader(@fileName);
 
         int frames, depth;
 
@@ -67,20 +65,6 @@ public class MeshRender : MonoBehaviour
 
             yield return null;
         }
-
-/*         while (!inp.EndOfStream)
-        {
-            var line = inp.ReadLine();
-            var values = line.Split(' ');
-            int frames = int.Parse(values[0]);
-            int depth = int.Parse(values[1]);
-
-            LoadByQuality(depth, frames, loadedFrames);
-
-            loadedFrames += frames;
-
-            yield return null;
-        } */
     }
 
     public IEnumerator MeshRendering(){

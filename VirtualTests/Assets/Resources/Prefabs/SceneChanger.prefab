@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1642495067956146627}
   - component: {fileID: 1642495067956146624}
   - component: {fileID: 1642495067956146625}
-  - component: {fileID: 1642495067956146630}
   - component: {fileID: 1642495067956146631}
+  - component: {fileID: 22210829}
   m_Layer: 5
   m_Name: SceneChanger
   m_TagString: Untagged
@@ -30,11 +30,11 @@ Transform:
   m_GameObject: {fileID: 1642495067956146628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.7, z: 2.18}
-  m_LocalScale: {x: 0.2590522, y: 0.2590522, z: 0.2590522}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1642495067956146627
 MeshFilter:
@@ -99,21 +99,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1642495067956146630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642495067956146628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35dc3b4122d80ec488ea408d917f1697, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testIndex: 1
-  sceneIndex: 0
-  scenes: []
 --- !u!114 &1642495067956146631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,9 +142,9 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642495067956146630}
+      - m_Target: {fileID: 22210829}
         m_TargetAssemblyTypeName: ButtonObject, Assembly-CSharp
-        m_MethodName: LoadTest1
+        m_MethodName: LoadTest3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -205,3 +190,21 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &22210829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642495067956146628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35dc3b4122d80ec488ea408d917f1697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testIndex: 1
+  sceneIndex: 0
+  canvases: {fileID: 0}
+  results: {fileID: 0}
+  message: {fileID: 0}
+  scenes: []

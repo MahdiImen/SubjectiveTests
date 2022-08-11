@@ -14,9 +14,9 @@ public class ButtonObject : MonoBehaviour
     int startingScene = 0;
 
 
-    GameObject canvases = null;
-    Results results= null;
-    Text message = null;
+    public GameObject canvases = null;
+    public Results results= null;
+    public Text message = null;
 
     public GameObject[] scenes = null;
 
@@ -33,7 +33,8 @@ public class ButtonObject : MonoBehaviour
 
         message =  GameObject.FindGameObjectWithTag("Message").GetComponent<Text>();
         results =  GameObject.FindGameObjectWithTag("Results").GetComponent<Results>();
-        canvases =  GameObject.FindGameObjectWithTag("Questions");
+        canvases = GameObject.FindGameObjectWithTag("Questions");
+        canvases.SetActive (false);
         scenes = GameObject.FindGameObjectsWithTag("Scene");
 
         startingScene = randomizer.Next(1, 3);
