@@ -419,7 +419,7 @@ MonoBehaviour:
   loadedFrames: 0
   meshList: []
   materialList: []
-  objectReferenceScene: 0
+  objectReferenceScene: 1
   loadQualities: 08000000
   loadSequences: 96000000
   fps: 50
@@ -1853,7 +1853,7 @@ MonoBehaviour:
   loadedFrames: 0
   meshList: []
   materialList: []
-  objectReferenceScene: 0
+  objectReferenceScene: 1
   loadQualities: 06000000
   loadSequences: 96000000
   fps: 50
@@ -2457,7 +2457,7 @@ MonoBehaviour:
   loadedFrames: 0
   meshList: []
   materialList: []
-  objectReferenceScene: 0
+  objectReferenceScene: 1
   loadQualities: 07000000
   loadSequences: 96000000
   fps: 50
@@ -5375,7 +5375,7 @@ MonoBehaviour:
   loadedFrames: 0
   meshList: []
   materialList: []
-  objectReferenceScene: 0
+  objectReferenceScene: 1
   loadQualities: 07000000
   loadSequences: 96000000
   fps: 50

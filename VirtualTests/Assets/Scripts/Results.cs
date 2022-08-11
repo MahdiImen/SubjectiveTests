@@ -15,14 +15,14 @@ public class Results : MonoBehaviour
     public Slider[] sliders = null;
     public Button[] buttons = null;
 
-    public int selection=0;
+    private int selection=0;
 
 
     void Start()
     {
         fileName += TestName + ".csv";
-        sliders = FindObjectsOfType<Slider>();
-        buttons = FindObjectsOfType<Button>();
+        sliders = FindObjectsOfType<Slider>(true);
+        buttons = FindObjectsOfType<Button>(true);
     }
 
     public void SetResultValueA(){

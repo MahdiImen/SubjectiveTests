@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Message
+  - Questions
+  - Results
+  - Scene
   layers:
   - Default
   - TransparentFX
