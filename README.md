@@ -96,7 +96,7 @@ You can also specify which object you want to convert, at which depth, starting 
 **IMPORTANT NOTE**: Depending on the machine running, this process will take hours to finish running. We recommend converting only 150 frames per object as only these will be used in the subjective tests. 
 
 5. Once that's established, you can copy the Meshes folder into the MeshRenderer/Assets/Resources directory
-![](Images/6.PNG)
+![](Images/6.png)
 
 **IMPORTANT NOTE**: Do not change the file structure.
 
@@ -108,17 +108,17 @@ Before opening the Unity project, make sure that you Oculus Quest is well set-up
 
 1. Open Unity Hub. Make sure you have the Unity 2022.1.6f1 version installed. Then, open the folder VirtualTests as a Unity Project. If the project takes too much time to load, delete the Meshes folder. Once the project opens, you can copy back the meshes one object at a time. This is due to the large memory size of the meshes.
 
-![](Images/8.PNG)
+![](Images/8.png)
 
-![](Images/7.PNG)
+![](Images/7.png)
 
 2. In Unity Editor, navigate to the Scenes folder and open Test1.
 
-![](Images/5.PNG)
+![](Images/5.png)
 
 3. Click on the Results GameObject. In the Inspector, write your name under Tester Name. 
 
-![](Images/4.PNG)
+![](Images/4.png)
 
 **IMPORTANT NOTE**: After you finish Test1, redo the steps 2 and 3 on Test2 and Test3.
 
