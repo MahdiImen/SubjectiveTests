@@ -47,11 +47,11 @@ public class Results : MonoBehaviour
             sliders[i].value = 0;
         }
         //Save and reset button values
-        output+= ", " + selection;
+        output+= ", Selection, " + selection;
         output += "\n";
         System.IO.File.AppendAllText(fileName, output);
 
-        
+        selection = 0;
         for(int i= 0; i < buttons.Length ; i++ ){
             buttons[i].interactable = false;
             buttons[i].interactable = true;
@@ -77,6 +77,8 @@ public class Results : MonoBehaviour
         output = string.Format("{0}, {1}, {2}", TesterName, part, selection);
         output += "\n";
         System.IO.File.AppendAllText(fileName, output);
+
+        selection = 0;
         for(int i= 0; i < buttons.Length ; i++ ){
             buttons[i].interactable = false;
             buttons[i].interactable = true;
