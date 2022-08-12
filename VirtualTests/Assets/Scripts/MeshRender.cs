@@ -19,10 +19,7 @@ public class MeshRender : MonoBehaviour
 
     public int objectReferenceScene = 0;
 
-    public List<int> loadQualities = new List<int>();
-    public List<int> loadSequences = new List<int>();
 
-    public int fps = 50;
 
 
     void Start()
@@ -52,20 +49,27 @@ public class MeshRender : MonoBehaviour
     }
 
 
+
     private IEnumerator LoadFrames()
     {
+        string fileName = "Assets\\Files\\LoadConfiguration\\LoadConfig_" + tag +".cfg";
+        StreamReader inp = new StreamReader(@fileName);
 
-        int frames, depth;
 
-        for (var i = 0; i < loadQualities.Count; i++) {
-            depth = loadQualities[i];
-            frames = loadSequences[i];
+
+        while (!inp.EndOfStream)
+        {
+            var line = inp.ReadLine();
+            var values = line.Split(' ');
+            int frames = int.Parse(values[0]);
+            int depth = int.Parse(values[1]);
             LoadByQuality(depth, frames, loadedFrames);
             loadedFrames += frames;
 
             yield return null;
         }
     }
+
 
     public IEnumerator MeshRendering(){
 
@@ -77,19 +81,19 @@ public class MeshRender : MonoBehaviour
 
                 if(rend.isVisible){
 
-                    if(fps > 30){
-                        //Forward play of the sequence 
-                        if(frameIndex < loadedFrames){
-                            rend.material.mainTexture = materialList[frameIndex];    
-                            filter.sharedMesh = meshList[frameIndex];
-                        }
-                        //Backward play of the sequence 
-                        else
-                        {
-                            rend.material.mainTexture = materialList[2 * loadedFrames - frameIndex -1];    
-                            filter.sharedMesh = meshList[2 * loadedFrames - frameIndex - 1];                           
-                        }
-                    }                
+
+                    //Forward play of the sequence 
+                    if(frameIndex < loadedFrames){
+                        rend.material.mainTexture = materialList[frameIndex];    
+                        filter.sharedMesh = meshList[frameIndex];
+                    }
+                    //Backward play of the sequence 
+                    else
+                    {
+                        rend.material.mainTexture = materialList[2 * loadedFrames - frameIndex -1];    
+                        filter.sharedMesh = meshList[2 * loadedFrames - frameIndex - 1];                           
+                    }
+                                   
                 }
                 frameIndex ++;
                 frameIndex = frameIndex % (2 * loadedFrames);

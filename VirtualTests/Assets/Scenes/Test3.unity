@@ -529,7 +529,7 @@ GameObject:
   - component: {fileID: 252501146}
   m_Layer: 0
   m_Name: soldier
-  m_TagString: Untagged
+  m_TagString: T3_soldier2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -615,9 +615,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 3
-  loadQualities: 07000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &283838844
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,7 +853,7 @@ GameObject:
   - component: {fileID: 537770677}
   m_Layer: 0
   m_Name: longdress
-  m_TagString: Untagged
+  m_TagString: T3_longdress1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -942,9 +939,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 1
-  loadQualities: 06000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &542457123
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,7 +986,7 @@ GameObject:
   - component: {fileID: 584143425}
   m_Layer: 0
   m_Name: longdress
-  m_TagString: Untagged
+  m_TagString: T3_longdress3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1078,9 +1072,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 5
-  loadQualities: 06000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!108 &705507994 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 705507994, guid: 663d0263bba9f7945a5d434b2ddf1130,
@@ -1298,7 +1289,7 @@ GameObject:
   - component: {fileID: 868008006}
   m_Layer: 0
   m_Name: redandblack
-  m_TagString: Untagged
+  m_TagString: T3_redandblack1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1384,9 +1375,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 2
-  loadQualities: 07000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &881641603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1631,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903538766}
   m_CullTransparentMesh: 1
+--- !u!1 &920870629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920870631}
+  - component: {fileID: 920870630}
+  m_Layer: 0
+  m_Name: SceneCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &920870630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920870629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434d70fb4f5731049a70079e8ed52de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Test3
+--- !u!4 &920870631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920870629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &954688075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1690,7 +1723,7 @@ GameObject:
   - component: {fileID: 1030729225}
   m_Layer: 0
   m_Name: soldier
-  m_TagString: Untagged
+  m_TagString: T3_soldier3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1776,9 +1809,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 6
-  loadQualities: 06000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &1155751062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,7 +1838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd9d0de87c714f4cadd10723e42637e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TesterName: Imen
+  TesterName: Tseter
   TestName: Test3
   sliders: []
   buttons: []
@@ -1874,7 +1904,7 @@ GameObject:
   - component: {fileID: 1365676501}
   m_Layer: 0
   m_Name: loot
-  m_TagString: Untagged
+  m_TagString: T3_loot1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1960,9 +1990,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 2
-  loadQualities: 08000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &1392456974
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,7 +2156,7 @@ GameObject:
   - component: {fileID: 1653526518}
   m_Layer: 0
   m_Name: redandblack
-  m_TagString: Untagged
+  m_TagString: T3_redandblack3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2215,9 +2242,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 5
-  loadQualities: 08000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &1861370893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,7 +2256,7 @@ GameObject:
   - component: {fileID: 1861370895}
   m_Layer: 0
   m_Name: longdress
-  m_TagString: Untagged
+  m_TagString: T3_longdress2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2318,9 +2342,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 4
-  loadQualities: 06000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &1873655163
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,7 +2356,7 @@ GameObject:
   - component: {fileID: 1873655165}
   m_Layer: 0
   m_Name: loot
-  m_TagString: Untagged
+  m_TagString: T3_loot3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2421,9 +2442,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 6
-  loadQualities: 07000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &1940005720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,7 +2456,7 @@ GameObject:
   - component: {fileID: 1940005722}
   m_Layer: 0
   m_Name: redandblack
-  m_TagString: Untagged
+  m_TagString: T3_redandblack2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2524,9 +2542,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 3
-  loadQualities: 07000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &1967155440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2676,7 +2691,7 @@ GameObject:
   - component: {fileID: 1969683133}
   m_Layer: 0
   m_Name: soldier
-  m_TagString: Untagged
+  m_TagString: T3_soldier1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2762,9 +2777,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 1
-  loadQualities: 07000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &2056771012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,7 +2791,7 @@ GameObject:
   - component: {fileID: 2056771014}
   m_Layer: 0
   m_Name: loot
-  m_TagString: Untagged
+  m_TagString: T3_loot2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2865,9 +2877,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 4
-  loadQualities: 06000000
-  loadSequences: 64000000
-  fps: 50
 --- !u!1 &2060023867
 GameObject:
   m_ObjectHideFlags: 0

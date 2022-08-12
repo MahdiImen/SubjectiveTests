@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 70588449}
   m_Layer: 0
   m_Name: longdress
-  m_TagString: Untagged
+  m_TagString: T1_longdress2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -399,9 +399,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 1
-  loadQualities: 08000000
-  loadSequences: 96000000
-  fps: 50
 --- !u!23 &70588450
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -744,6 +741,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &323555450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323555451}
+  - component: {fileID: 323555452}
+  m_Layer: 0
+  m_Name: SceneCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &323555451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323555450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.000197649, y: 0.91774, z: 1.642172}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &323555452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323555450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434d70fb4f5731049a70079e8ed52de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Test1
 --- !u!1 &384005690
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +800,7 @@ GameObject:
   - component: {fileID: 384005692}
   m_Layer: 0
   m_Name: redandblack
-  m_TagString: Untagged
+  m_TagString: T1_redandblack2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -794,9 +836,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 2
-  loadQualities: 06000000
-  loadSequences: 96000000
-  fps: 50
 --- !u!23 &384005693
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1797,7 +1836,7 @@ GameObject:
   - component: {fileID: 602778985}
   m_Layer: 0
   m_Name: longdress
-  m_TagString: Untagged
+  m_TagString: T1_longdress1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1833,9 +1872,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 1
-  loadQualities: 06000000
-  loadSequences: 96000000
-  fps: 50
 --- !u!23 &602778986
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2401,7 +2437,7 @@ GameObject:
   - component: {fileID: 776105530}
   m_Layer: 0
   m_Name: longdress
-  m_TagString: Untagged
+  m_TagString: T1_longdress3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2437,9 +2473,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 1
-  loadQualities: 07000000
-  loadSequences: 96000000
-  fps: 50
 --- !u!23 &776105531
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2694,7 +2727,7 @@ GameObject:
   - component: {fileID: 840783177}
   m_Layer: 0
   m_Name: redandblack
-  m_TagString: Untagged
+  m_TagString: T1_redandblack4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2730,9 +2763,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 2
-  loadQualities: 08000000
-  loadSequences: 96000000
-  fps: 50
 --- !u!23 &840783178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3421,7 +3451,7 @@ GameObject:
   - component: {fileID: 1199828880}
   m_Layer: 0
   m_Name: redandblack
-  m_TagString: Untagged
+  m_TagString: T1_redandblack1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3457,9 +3487,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 2
-  loadQualities: 07000000
-  loadSequences: 96000000
-  fps: 50
 --- !u!23 &1199828881
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4269,7 +4296,7 @@ GameObject:
   - component: {fileID: 1599697474}
   m_Layer: 0
   m_Name: redandblack
-  m_TagString: Untagged
+  m_TagString: T1_redandblack3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4305,9 +4332,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 2
-  loadQualities: 08000000
-  loadSequences: 96000000
-  fps: 50
 --- !u!23 &1599697475
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5115,7 +5139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936402113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.220894, y: 0.9999605, z: 3.9804707}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5330,7 +5354,7 @@ GameObject:
   - component: {fileID: 1984339088}
   m_Layer: 0
   m_Name: longdress
-  m_TagString: Untagged
+  m_TagString: T1_longdress4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5366,9 +5390,6 @@ MonoBehaviour:
   meshList: []
   materialList: []
   objectReferenceScene: 1
-  loadQualities: 07000000
-  loadSequences: 96000000
-  fps: 50
 --- !u!23 &1984339089
 MeshRenderer:
   m_ObjectHideFlags: 0
